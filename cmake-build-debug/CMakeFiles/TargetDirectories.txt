@@ -1,0 +1,3 @@
+/mnt/c/Users/Rhulani Matiane/Desktop/Rhulani/Computer Science Resources/Semester 2/COS214/Practicals/Prac2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Rhulani Matiane/Desktop/Rhulani/Computer Science Resources/Semester 2/COS214/Practicals/Prac2/cmake-build-debug/CMakeFiles/Prac2.dir
+/mnt/c/Users/Rhulani Matiane/Desktop/Rhulani/Computer Science Resources/Semester 2/COS214/Practicals/Prac2/cmake-build-debug/CMakeFiles/edit_cache.dir
