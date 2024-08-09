@@ -3,11 +3,8 @@
 #define PRAC_2_SHIELDBEARER_H
 
 #include "Soldiers.h"
-#include <string>
-class ShieldBearer {
+class ShieldBearer :public Soldiers{
 
-#include "Soldiers.h"
-#include <string>
 
 private:
     int healthPerSoldier;
@@ -16,17 +13,22 @@ private:
     int amountOfSoldiersPerUnit;
     std::string unitName;
 public:
-    Soldiers* clonis();
+    ////constructor
+    ShieldBearer(int health, int damage, int defence, int amount, std::string name);
+
+    Soldiers* clonis() const override;
+
     void engage();
     void disengage();
-    void prepare();
-    void execute();
-    void retreat();
-    void rest();
 
-
+    void prepare() override;
+    void execute() override;
+    void retreat() override;
+    void rest() override;
 
 };
+
+
 
 
 #endif

@@ -4,12 +4,13 @@
 #define PRAC_2_INFANTRYFACTORY_H
 
 #include "Infantry.h"
-class InfantryFactory {
+#include "SoldierFactory.h"
+class InfantryFactory: public SoldierFactory{
 public:
-    Soldiers * createUnit();
-    int calculateTotalHealthPerUnit();
-    int calculateTotalDamagePerUnit();
-    int calculateTotalDefencePerUnit();
+    Soldiers * createUnit() override;
+    int calculateTotalHealthPerUnit(Soldiers* unit) override;
+    int calculateTotalDamagePerUnit(Soldiers* unit) override;
+    int calculateTotalDefencePerUnit(Soldiers* unit) override;
 };
 
 

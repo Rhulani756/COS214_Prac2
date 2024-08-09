@@ -3,20 +3,17 @@
 #ifndef PRAC_2_SOLDIERFACTORY_H
 #define PRAC_2_SOLDIERFACTORY_H
 
-#include "Infantry.h"
-#include "Infantry.h"
-#include "Infantry.h"
-class SoldierFactory {
-private:
-    Soldiers* soldiers;
+#include "Soldiers.h"
 
-protected:
-    Soldiers* createUnit();
-    int TotalHealthPerUnit();// calculate;
-    int TotalDamagePerUnit();// calculate;
-    int TotalDefencePerUnit();// calculate;
+class SoldierFactory {
+public:
+    virtual ~SoldierFactory()=default;
+    // Pure virtual function for creating unitss
+    virtual Soldiers* createUnit() = 0;
+    virtual int calculateTotalHealthPerUnit(Soldiers* unit) = 0;
+    virtual int calculateTotalDamagePerUnit(Soldiers* unit) = 0;
+    virtual int calculateTotalDefencePerUnit(Soldiers* unit) = 0;
 
 };
-
 
 #endif

@@ -3,13 +3,13 @@
 #define PRAC_2_BOATMANFACTORY_H
 
 #include "Boatman.h"
-class BoatmanFactory {
+#include "SoldierFactory.h"
+class BoatmanFactory :SoldierFactory{
 public:
-    Soldiers * createUnit();
-    int calculateTotalHealthPerUnit();
-    int calculateTotalDamagePerUnit();
-    int calculateTotalDefencePerUnit();
+    Soldiers * createUnit() override;
+    int calculateTotalHealthPerUnit(Soldiers* unit) override;
+    int calculateTotalDamagePerUnit(Soldiers* unit) override;
+    int calculateTotalDefencePerUnit(Soldiers* unit) override;
 };
-
 
 #endif
