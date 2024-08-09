@@ -1,0 +1,2 @@
+
+#include "InfantryFactory.h"
