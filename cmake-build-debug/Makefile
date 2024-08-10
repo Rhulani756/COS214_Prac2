@@ -128,27 +128,324 @@ main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Prac2.dir/build.make CMakeFiles/Prac2.dir/main.cpp.o
-.PHONY : main.cpp.o
+Boatman.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Boatman.cpp.o
+.PHONY : Boatman.cpp.o
 
-main.i: main.cpp.i
+Boatman.i: Boatman.cpp.i
 
-.PHONY : main.i
+.PHONY : Boatman.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Prac2.dir/build.make CMakeFiles/Prac2.dir/main.cpp.i
-.PHONY : main.cpp.i
+Boatman.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Boatman.cpp.i
+.PHONY : Boatman.cpp.i
 
-main.s: main.cpp.s
+Boatman.s: Boatman.cpp.s
 
-.PHONY : main.s
+.PHONY : Boatman.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Prac2.dir/build.make CMakeFiles/Prac2.dir/main.cpp.s
-.PHONY : main.cpp.s
+Boatman.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Boatman.cpp.s
+.PHONY : Boatman.cpp.s
+
+BoatmanFactory.o: BoatmanFactory.cpp.o
+
+.PHONY : BoatmanFactory.o
+
+# target to build an object file
+BoatmanFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/BoatmanFactory.cpp.o
+.PHONY : BoatmanFactory.cpp.o
+
+BoatmanFactory.i: BoatmanFactory.cpp.i
+
+.PHONY : BoatmanFactory.i
+
+# target to preprocess a source file
+BoatmanFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/BoatmanFactory.cpp.i
+.PHONY : BoatmanFactory.cpp.i
+
+BoatmanFactory.s: BoatmanFactory.cpp.s
+
+.PHONY : BoatmanFactory.s
+
+# target to generate assembly for a file
+BoatmanFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/BoatmanFactory.cpp.s
+.PHONY : BoatmanFactory.cpp.s
+
+CareTaker.o: CareTaker.cpp.o
+
+.PHONY : CareTaker.o
+
+# target to build an object file
+CareTaker.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/CareTaker.cpp.o
+.PHONY : CareTaker.cpp.o
+
+CareTaker.i: CareTaker.cpp.i
+
+.PHONY : CareTaker.i
+
+# target to preprocess a source file
+CareTaker.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/CareTaker.cpp.i
+.PHONY : CareTaker.cpp.i
+
+CareTaker.s: CareTaker.cpp.s
+
+.PHONY : CareTaker.s
+
+# target to generate assembly for a file
+CareTaker.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/CareTaker.cpp.s
+.PHONY : CareTaker.cpp.s
+
+DemoMain.o: DemoMain.cpp.o
+
+.PHONY : DemoMain.o
+
+# target to build an object file
+DemoMain.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/DemoMain.cpp.o
+.PHONY : DemoMain.cpp.o
+
+DemoMain.i: DemoMain.cpp.i
+
+.PHONY : DemoMain.i
+
+# target to preprocess a source file
+DemoMain.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/DemoMain.cpp.i
+.PHONY : DemoMain.cpp.i
+
+DemoMain.s: DemoMain.cpp.s
+
+.PHONY : DemoMain.s
+
+# target to generate assembly for a file
+DemoMain.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/DemoMain.cpp.s
+.PHONY : DemoMain.cpp.s
+
+Infantry.o: Infantry.cpp.o
+
+.PHONY : Infantry.o
+
+# target to build an object file
+Infantry.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Infantry.cpp.o
+.PHONY : Infantry.cpp.o
+
+Infantry.i: Infantry.cpp.i
+
+.PHONY : Infantry.i
+
+# target to preprocess a source file
+Infantry.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Infantry.cpp.i
+.PHONY : Infantry.cpp.i
+
+Infantry.s: Infantry.cpp.s
+
+.PHONY : Infantry.s
+
+# target to generate assembly for a file
+Infantry.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Infantry.cpp.s
+.PHONY : Infantry.cpp.s
+
+InfantryFactory.o: InfantryFactory.cpp.o
+
+.PHONY : InfantryFactory.o
+
+# target to build an object file
+InfantryFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/InfantryFactory.cpp.o
+.PHONY : InfantryFactory.cpp.o
+
+InfantryFactory.i: InfantryFactory.cpp.i
+
+.PHONY : InfantryFactory.i
+
+# target to preprocess a source file
+InfantryFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/InfantryFactory.cpp.i
+.PHONY : InfantryFactory.cpp.i
+
+InfantryFactory.s: InfantryFactory.cpp.s
+
+.PHONY : InfantryFactory.s
+
+# target to generate assembly for a file
+InfantryFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/InfantryFactory.cpp.s
+.PHONY : InfantryFactory.cpp.s
+
+Memento.o: Memento.cpp.o
+
+.PHONY : Memento.o
+
+# target to build an object file
+Memento.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Memento.cpp.o
+.PHONY : Memento.cpp.o
+
+Memento.i: Memento.cpp.i
+
+.PHONY : Memento.i
+
+# target to preprocess a source file
+Memento.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Memento.cpp.i
+.PHONY : Memento.cpp.i
+
+Memento.s: Memento.cpp.s
+
+.PHONY : Memento.s
+
+# target to generate assembly for a file
+Memento.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Memento.cpp.s
+.PHONY : Memento.cpp.s
+
+ShieldBearer.o: ShieldBearer.cpp.o
+
+.PHONY : ShieldBearer.o
+
+# target to build an object file
+ShieldBearer.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/ShieldBearer.cpp.o
+.PHONY : ShieldBearer.cpp.o
+
+ShieldBearer.i: ShieldBearer.cpp.i
+
+.PHONY : ShieldBearer.i
+
+# target to preprocess a source file
+ShieldBearer.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/ShieldBearer.cpp.i
+.PHONY : ShieldBearer.cpp.i
+
+ShieldBearer.s: ShieldBearer.cpp.s
+
+.PHONY : ShieldBearer.s
+
+# target to generate assembly for a file
+ShieldBearer.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/ShieldBearer.cpp.s
+.PHONY : ShieldBearer.cpp.s
+
+ShieldBearerFactory.o: ShieldBearerFactory.cpp.o
+
+.PHONY : ShieldBearerFactory.o
+
+# target to build an object file
+ShieldBearerFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/ShieldBearerFactory.cpp.o
+.PHONY : ShieldBearerFactory.cpp.o
+
+ShieldBearerFactory.i: ShieldBearerFactory.cpp.i
+
+.PHONY : ShieldBearerFactory.i
+
+# target to preprocess a source file
+ShieldBearerFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/ShieldBearerFactory.cpp.i
+.PHONY : ShieldBearerFactory.cpp.i
+
+ShieldBearerFactory.s: ShieldBearerFactory.cpp.s
+
+.PHONY : ShieldBearerFactory.s
+
+# target to generate assembly for a file
+ShieldBearerFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/ShieldBearerFactory.cpp.s
+.PHONY : ShieldBearerFactory.cpp.s
+
+SoldierFactory.o: SoldierFactory.cpp.o
+
+.PHONY : SoldierFactory.o
+
+# target to build an object file
+SoldierFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/SoldierFactory.cpp.o
+.PHONY : SoldierFactory.cpp.o
+
+SoldierFactory.i: SoldierFactory.cpp.i
+
+.PHONY : SoldierFactory.i
+
+# target to preprocess a source file
+SoldierFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/SoldierFactory.cpp.i
+.PHONY : SoldierFactory.cpp.i
+
+SoldierFactory.s: SoldierFactory.cpp.s
+
+.PHONY : SoldierFactory.s
+
+# target to generate assembly for a file
+SoldierFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/SoldierFactory.cpp.s
+.PHONY : SoldierFactory.cpp.s
+
+Soldiers.o: Soldiers.cpp.o
+
+.PHONY : Soldiers.o
+
+# target to build an object file
+Soldiers.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Soldiers.cpp.o
+.PHONY : Soldiers.cpp.o
+
+Soldiers.i: Soldiers.cpp.i
+
+.PHONY : Soldiers.i
+
+# target to preprocess a source file
+Soldiers.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Soldiers.cpp.i
+.PHONY : Soldiers.cpp.i
+
+Soldiers.s: Soldiers.cpp.s
+
+.PHONY : Soldiers.s
+
+# target to generate assembly for a file
+Soldiers.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/Soldiers.cpp.s
+.PHONY : Soldiers.cpp.s
+
+TestingMain.o: TestingMain.cpp.o
+
+.PHONY : TestingMain.o
+
+# target to build an object file
+TestingMain.cpp.o:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/TestingMain.cpp.o
+.PHONY : TestingMain.cpp.o
+
+TestingMain.i: TestingMain.cpp.i
+
+.PHONY : TestingMain.i
+
+# target to preprocess a source file
+TestingMain.cpp.i:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/TestingMain.cpp.i
+.PHONY : TestingMain.cpp.i
+
+TestingMain.s: TestingMain.cpp.s
+
+.PHONY : TestingMain.s
+
+# target to generate assembly for a file
+TestingMain.cpp.s:
+	$(MAKE) -f CMakeFiles/Prac_2.dir/build.make CMakeFiles/Prac_2.dir/TestingMain.cpp.s
+.PHONY : TestingMain.cpp.s
 
 # Help Target
 help:
@@ -157,11 +454,44 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Prac2"
+	@echo "... Prac_2"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Boatman.o"
+	@echo "... Boatman.i"
+	@echo "... Boatman.s"
+	@echo "... BoatmanFactory.o"
+	@echo "... BoatmanFactory.i"
+	@echo "... BoatmanFactory.s"
+	@echo "... CareTaker.o"
+	@echo "... CareTaker.i"
+	@echo "... CareTaker.s"
+	@echo "... DemoMain.o"
+	@echo "... DemoMain.i"
+	@echo "... DemoMain.s"
+	@echo "... Infantry.o"
+	@echo "... Infantry.i"
+	@echo "... Infantry.s"
+	@echo "... InfantryFactory.o"
+	@echo "... InfantryFactory.i"
+	@echo "... InfantryFactory.s"
+	@echo "... Memento.o"
+	@echo "... Memento.i"
+	@echo "... Memento.s"
+	@echo "... ShieldBearer.o"
+	@echo "... ShieldBearer.i"
+	@echo "... ShieldBearer.s"
+	@echo "... ShieldBearerFactory.o"
+	@echo "... ShieldBearerFactory.i"
+	@echo "... ShieldBearerFactory.s"
+	@echo "... SoldierFactory.o"
+	@echo "... SoldierFactory.i"
+	@echo "... SoldierFactory.s"
+	@echo "... Soldiers.o"
+	@echo "... Soldiers.i"
+	@echo "... Soldiers.s"
+	@echo "... TestingMain.o"
+	@echo "... TestingMain.i"
+	@echo "... TestingMain.s"
 .PHONY : help
 
 
