@@ -16,7 +16,9 @@ public:
 ////constructor
  Boatman(int health, int damage, int defence, int amount, std::string name)
         : Soldiers(health, damage, defence, amount, name) {}
-
+   Boatman() 
+        : Soldiers(), healthPerSoldier(0), damagePerSoldier(0), 
+          defencePerSoldier(0), amountOfSoldiersPerUnit(0), unitName("Boatman") {}
        Soldiers* clonis() const override {
         return new Boatman(*this);
     }

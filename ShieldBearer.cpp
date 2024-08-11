@@ -1,7 +1,6 @@
 #include "ShieldBearer.h"
 
 
-
 Soldiers* ShieldBearer::clonis() const {
     return new ShieldBearer(*this);
 }

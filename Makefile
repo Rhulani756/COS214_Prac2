@@ -45,9 +45,11 @@ clean:
 	rm -f *.o *.gcda *.gcno *.gcov *.gz *.json Main
 
 valgrind:
+	make 
 	valgrind --leak-check=full -s ./Main
 
 coverage: clean
 	g++ --coverage *.cpp -o Main
 	./Main
-	gcov -f -m -r -j Main-MainCourse Main-Menu Main-Starter Main-Course Main-Dessert Main-MainCourse
+	gcov -f -m -r -j Main-Main Main-Boatman Main-BoatmanFactory Main-CareTaker Main-Infantry Main-InfantryFactory Main-Memento Main-ShieldBearer Main-ShieldBearerFactory
+	Main-Soldiers Main-SoldierFactory 

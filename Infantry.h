@@ -13,7 +13,9 @@ public:
     ////constructor
    Infantry(int health, int damage, int defence, int amount, std::string name)
         : Soldiers(health, damage, defence, amount, name) {}
-
+   Infantry() 
+        : Soldiers(), healthPerSoldier(0), damagePerSoldier(0),
+         defencePerSoldier(0), amountOfSoldiersPerUnit(0), unitName("Infantry") {}
     Soldiers* clonis() const override;
 
     void engage();

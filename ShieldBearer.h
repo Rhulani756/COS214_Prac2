@@ -15,7 +15,13 @@ public:
     ////constructor
    ShieldBearer(int health, int damage, int defence, int amount, std::string name)
         : Soldiers(health, damage, defence, amount, name) {}
-
+   ShieldBearer() 
+        : Soldiers(), 
+          healthPerSoldier(0), 
+          damagePerSoldier(0), 
+          defencePerSoldier(0), 
+          amountOfSoldiersPerUnit(0), 
+          unitName("ShieldBearer") {}
 
     Soldiers* clonis() const override;
 
@@ -29,6 +35,7 @@ public:
 
     //added child class destructors just in case memory cleanup is needed in the future.
     virtual ~ShieldBearer() = default;
+
 
 };
 

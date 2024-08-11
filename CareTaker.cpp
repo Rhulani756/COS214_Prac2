@@ -2,9 +2,11 @@
 
 CareTaker::~CareTaker() {
     for (Memento* m : mementoList) {
+        
         delete m;
-        m=nullptr;
+      
     }
+    mementoList.clear();
 }
 void CareTaker::addMemento(Memento* m) {
     mementoList.push_back(m);

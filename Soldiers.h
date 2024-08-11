@@ -21,6 +21,8 @@ private:
 public:
    
    Soldiers(int health, int damage, int defence, int amount, std::string name);
+    Soldiers():healthPerSoldier(0),defencePerSoldier(0),amountOfSoldiersPerUnit(0),unitName("ShieldBearer"){};
+
  virtual ~Soldiers();
         
     // Pure virtual method for Prototype pattern
