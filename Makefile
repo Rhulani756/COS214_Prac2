@@ -1,11 +1,11 @@
-ofiles = Main.o Boatman.o BoatmanFactory.o CareTaker.o Infantry.o InfantryFactory.o Memento.o ShieldBearer.o ShieldBearerFactory.o Soldiers.o SoldierFactory.o
+ofiles = TestingMain.o Boatman.o BoatmanFactory.o CareTaker.o Infantry.o InfantryFactory.o Memento.o ShieldBearer.o ShieldBearerFactory.o Soldiers.o SoldierFactory.o
 gpp_o = g++ -c
 
 all: $(ofiles)
-	g++ $(ofiles) -o Main
+	g++ $(ofiles) -o TestingMain
 
-Main.o: Main.cpp 
-	$(gpp_o) Main.cpp
+TestingMain.o: TestingMain.cpp 
+	$(gpp_o) TestingMain.cpp
 
 Boatman.o: Boatman.cpp Boatman.h Soldiers.h
 	$(gpp_o) Boatman.cpp
@@ -38,18 +38,18 @@ Soldiers.o: Soldiers.cpp Soldiers.h
 	$(gpp_o) Soldiers.cpp
 
 
-run: Main
-	./Main
+run: TestingMain
+	./TestingMain
 
 clean:
 	rm -f *.o *.gcda *.gcno *.gcov *.gz *.json Main
 
 valgrind:
 	make 
-	valgrind --leak-check=full -s ./Main
+	valgrind --leak-check=full -s ./TestingMain
 
 coverage: clean
 	g++ --coverage *.cpp -o Main
 	./Main
-	gcov -f -m -r -j Main-Main Main-Boatman Main-BoatmanFactory Main-CareTaker Main-Infantry Main-InfantryFactory Main-Memento Main-ShieldBearer Main-ShieldBearerFactory
+	gcov -f -m -r -j Main-TestingMain Main-Boatman Main-BoatmanFactory Main-CareTaker Main-Infantry Main-InfantryFactory Main-Memento Main-ShieldBearer Main-ShieldBearerFactory
 	Main-Soldiers Main-SoldierFactory 
