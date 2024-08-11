@@ -14,6 +14,8 @@ private:
 public:
     virtual ~Memento() = default;
     Memento(int health, int damage, int defence, int amount,std::string name);
+    //Memento():{healthPerSoldier(0),defencePerSoldier(0),amountOfSoldiersPerUnit(0),unitName("Momento")};
+       
     int getHealthPerSoldier() const;
     int getDamagePerSoldier() const;
     int getDefencePerSoldier() const;

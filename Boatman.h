@@ -6,19 +6,19 @@
 
 class Boatman : public Soldiers{
 private:
-    int healthPerSoldier;
-    int damagePerSoldier;
-    int defencePerSoldier;
-    int amountOfSoldiersPerUnit;
-    std::string unitName;
+    int healthPerSoldier= 0;
+    int damagePerSoldier= 0;
+    int defencePerSoldier= 0;
+    int amountOfSoldiersPerUnit = 0;
+    std::string unitName = "Boatman";
 
 public:
 ////constructor
  Boatman(int health, int damage, int defence, int amount, std::string name)
         : Soldiers(health, damage, defence, amount, name) {}
-   Boatman() 
-        : Soldiers(), healthPerSoldier(0), damagePerSoldier(0), 
-          defencePerSoldier(0), amountOfSoldiersPerUnit(0), unitName("Boatman") {}
+//    Boatman() 
+//         : Soldiers(), healthPerSoldier(0), damagePerSoldier(0), 
+//           defencePerSoldier(0), amountOfSoldiersPerUnit(0), unitName("Boatman") {}
        Soldiers* clonis() const override {
         return new Boatman(*this);
     }

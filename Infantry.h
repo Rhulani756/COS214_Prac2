@@ -4,11 +4,11 @@
 
 class Infantry: public Soldiers {
 private:
-    int healthPerSoldier;
-    int damagePerSoldier;
-    int defencePerSoldier;
-    int amountOfSoldiersPerUnit;
-    std::string unitName;
+    int healthPerSoldier =0;
+    int damagePerSoldier=0;
+    int defencePerSoldier=0;
+    int amountOfSoldiersPerUnit=0;
+    std::string unitName ="Infantry";
 public:
     ////constructor
    Infantry(int health, int damage, int defence, int amount, std::string name)

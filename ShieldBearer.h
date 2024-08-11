@@ -6,11 +6,11 @@
 class ShieldBearer :public Soldiers{
 
 private:
-    int healthPerSoldier;
-    int damagePerSoldier;
-    int defencePerSoldier;
-    int amountOfSoldiersPerUnit;
-    std::string unitName;
+    int healthPerSoldier=0;
+    int damagePerSoldier=0;
+    int defencePerSoldier=0;
+    int amountOfSoldiersPerUnit=0;
+    std::string unitName="ShieldBearer";
 public:
     ////constructor
    ShieldBearer(int health, int damage, int defence, int amount, std::string name)
@@ -34,7 +34,7 @@ public:
     void rest() override;
 
     //added child class destructors just in case memory cleanup is needed in the future.
-    virtual ~ShieldBearer() = default;
+ ~ShieldBearer() override {} 
 
 
 };

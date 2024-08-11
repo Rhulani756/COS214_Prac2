@@ -41,8 +41,9 @@ void testInfantry() {
     std::cout << "Cloned Infantry: " << clonedInfantry->getUnitName() << "\n";
     infantry.rest();
   
-    clonedInfantry=nullptr;
+    
     delete clonedInfantry;
+    clonedInfantry=nullptr;
 }
 
 void testInfantryFactory() {
@@ -58,8 +59,8 @@ void testInfantryFactory() {
     std::cout << "Infantry Total Defence: " << infantryFactory.calculateTotalDefencePerUnit(infantryUnit) << "\n\n";
     infantryUnit->disengage();
 
-    infantryUnit=nullptr;
     delete infantryUnit;
+    infantryUnit=nullptr;
 
 }
 
@@ -80,9 +81,9 @@ void testShieldBearer() {
     // Engage with the cloned unit
     std::cout << "Testing cloned ShieldBearer engaging in battle:\n";
     clonedShieldBearer->engage();
-shieldBearer.rest();
-       clonedShieldBearer=nullptr;
+    shieldBearer.rest();
     delete clonedShieldBearer;
+       clonedShieldBearer=nullptr;
 
 
 }
@@ -99,8 +100,8 @@ void testShieldBearerFactory() {
     std::cout << "ShieldBearer's Total Damage: " << shieldBearerFactory.calculateTotalDamagePerUnit(shieldBearerUnit) << "\n";
     std::cout << "ShieldBearer's Total Defense: " << shieldBearerFactory.calculateTotalDefencePerUnit(shieldBearerUnit) << "\n";
 
-    shieldBearerUnit=nullptr;
     delete shieldBearerUnit;
+    shieldBearerUnit=nullptr;
 }
 
 void testBoatman() {
@@ -120,8 +121,8 @@ void testBoatman() {
     std::cout << "Testing cloned Boatman engaging in battle:\n";
     clonedBoatman->engage();
     boatman.rest();
-clonedBoatman=nullptr;
     delete clonedBoatman;
+    clonedBoatman=nullptr;
 }
 
 void testBoatmanFactory() {
@@ -135,8 +136,8 @@ void testBoatmanFactory() {
     std::cout << "Boatman's Total Health: " << boatmanFactory.calculateTotalHealthPerUnit(boatmanUnit) << "\n";
     std::cout << "Boatman's Total Damage: " << boatmanFactory.calculateTotalDamagePerUnit(boatmanUnit) << "\n";
     std::cout << "Boatman's Total Defense: " << boatmanFactory.calculateTotalDefencePerUnit(boatmanUnit) << "\n";
-    boatmanUnit=nullptr;
     delete boatmanUnit;
+    boatmanUnit=nullptr;
 }
 
 void testCareTaker() {
@@ -214,14 +215,14 @@ void runGameSimulation() {
     std::cout << "Infantry, Shield Bearer, and Boatman units ready for battle again.\n\n";
 
     // Clean up
-    infantryUnit=nullptr;
     delete infantryUnit;
-      shieldBearerUnit=nullptr;
+    infantryUnit=nullptr;
     delete shieldBearerUnit;
-      boatmanUnit=nullptr;
+      shieldBearerUnit=nullptr;
     delete boatmanUnit;
-      clonedInfantry=nullptr;
+      boatmanUnit=nullptr;
     delete clonedInfantry;
+      clonedInfantry=nullptr;
 
     std::cout << "Game simulation complete.\n";
 }

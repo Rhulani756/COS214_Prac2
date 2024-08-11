@@ -16,14 +16,15 @@ void Soldiers::disengage() {
 
 
 Memento* Soldiers::militusMemento() {
-    return new Memento(healthPerSoldier, damagePerSoldier, defencePerSoldier, amountOfSoldiersPerUnit, unitName);
+    return new Memento(this->healthPerSoldier, this->damagePerSoldier, this->defencePerSoldier, this->amountOfSoldiersPerUnit, this->unitName);
 }
 void Soldiers::vivificaMemento(Memento* mem) {
-    healthPerSoldier = mem->getHealthPerSoldier();
-    damagePerSoldier = mem->getDamagePerSoldier();
-    defencePerSoldier = mem->getDefencePerSoldier();
-    amountOfSoldiersPerUnit = mem->getAmountOfSoldiersPerUnit();
-    unitName = mem->getUnitName();
+    this->healthPerSoldier = mem->getHealthPerSoldier();
+    this->damagePerSoldier = mem->getDamagePerSoldier();
+    this->defencePerSoldier = mem->getDefencePerSoldier();
+    this->amountOfSoldiersPerUnit = mem->getAmountOfSoldiersPerUnit();
+    this->unitName = mem->getUnitName();
+    delete mem;
 }
 
 int Soldiers::getHealthPerSoldier() const {
@@ -49,4 +50,5 @@ std::string Soldiers::getUnitName() const {
 Soldiers::~Soldiers() {
 
 }
+
 

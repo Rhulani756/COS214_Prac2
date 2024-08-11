@@ -25,10 +25,10 @@ InfantryFactory.o: InfantryFactory.cpp InfantryFactory.h
 Memento.o: Memento.cpp Memento.h
 	$(gpp_o) Memento.cpp
 
-ShieldBearer.o: ShieldBearer.cpp ShieldBearer.h
+ShieldBearer.o: ShieldBearer.cpp ShieldBearer.h 
 	$(gpp_o) ShieldBearer.cpp
 
-ShieldBearerFactory.o: ShieldBearerFactory.cpp ShieldBearerFactory.h
+ShieldBearerFactory.o: ShieldBearerFactory.cpp ShieldBearerFactory.h 
 	$(gpp_o) ShieldBearerFactory.cpp
 
 SoldierFactory.o: SoldierFactory.cpp SoldierFactory.h 

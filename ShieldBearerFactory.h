@@ -1,6 +1,7 @@
 
 #ifndef PRAC_2_SHIELDBEARERFACTORY_H
 #define PRAC_2_SHIELDBEARERFACTORY_H
+
 #include "SoldierFactory.h"
 #include "ShieldBearer.h"
 class ShieldBearerFactory :public SoldierFactory{
