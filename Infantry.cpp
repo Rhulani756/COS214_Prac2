@@ -1,29 +1,37 @@
 #include "Infantry.h"
 
-Infantry::Infantry(int health, int damage, int defence, int amount, std::string name) {
-    healthPerSoldier = health;
-    damagePerSoldier = damage;
-    defencePerSoldier = defence;
-    amountOfSoldiersPerUnit = amount;
-    unitName = name;
-}
+
 
 Soldiers* Infantry::clonis() const {
     return new Infantry(*this);
 }
 
+//Engage method
+void Infantry::engage() {
+    std::cout << "Infantry " << unitName << " is engaging with " << amountOfSoldiersPerUnit << " soldiers!" << std::endl;
+}
+
+//Disengage method
+void Infantry::disengage() {
+    std::cout << "Infantry " << unitName << " is disengaging!" << std::endl;
+}
+
+//Prepare method //(Template Method pattern)
 void Infantry::prepare() {
-    // Specific preparation for Infantry
+    std::cout << "Infantry " << unitName << " is preparing for battle!" << std::endl;
 }
 
+//Execute method //(Template Method pattern)
 void Infantry::execute() {
-    // Specific execution for Infantry
+    std::cout << "Infantry " << unitName << " is executing their battle plan!" << std::endl;
 }
 
+//Retreat method //(Template Method pattern)
 void Infantry::retreat() {
-    // Specific retreat for Infantry
+    std::cout << "Infantry " << unitName << " is retreating!" << std::endl;
 }
 
+// Rest method (Template Method pattern)
 void Infantry::rest() {
-    // Specific rest for Infantry
+    std::cout << "Infantry " << unitName << " is resting!" << std::endl;
 }

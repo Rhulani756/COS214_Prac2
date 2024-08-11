@@ -1,17 +1,26 @@
 #include "BoatmanFactory.h"
 
+// Create a Boatman unit and store it in the soldiers member
 Soldiers* BoatmanFactory::createUnit() {
-    return new Boatman(90, 60, 70, 10, "Boatman");
+    Soldiers* currentSoldiers = getSoldiers();
+    if (currentSoldiers) {
+        delete currentSoldiers; // Clean up the previous unit
+    }
+    setSoldiers(new Boatman(250, 140, 50, 20, "Boatman"));
+    return getSoldiers();
 }
 
+// Calculate total health for the unit
 int BoatmanFactory::calculateTotalHealthPerUnit(Soldiers* unit) {
-    return unit->healthPerSoldier * unit->amountOfSoldiersPerUnit;
+    return unit->getHealthPerSoldier() * unit->getAmountOfSoldiersPerUnit();
 }
 
+// Calculate total damage for the unit
 int BoatmanFactory::calculateTotalDamagePerUnit(Soldiers* unit) {
-    return unit->damagePerSoldier * unit->amountOfSoldiersPerUnit;
+    return unit->getDamagePerSoldier() * unit->getAmountOfSoldiersPerUnit();
 }
 
+// Calculate total defence for the unit
 int BoatmanFactory::calculateTotalDefencePerUnit(Soldiers* unit) {
-    return unit->defencePerSoldier * unit->amountOfSoldiersPerUnit;
+    return unit->getDefencePerSoldier() * unit->getAmountOfSoldiersPerUnit();
 }

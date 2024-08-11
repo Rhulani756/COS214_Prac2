@@ -5,7 +5,6 @@
 #include "Soldiers.h"
 class ShieldBearer :public Soldiers{
 
-
 private:
     int healthPerSoldier;
     int damagePerSoldier;
@@ -14,7 +13,9 @@ private:
     std::string unitName;
 public:
     ////constructor
-    ShieldBearer(int health, int damage, int defence, int amount, std::string name);
+   ShieldBearer(int health, int damage, int defence, int amount, std::string name)
+        : Soldiers(health, damage, defence, amount, name) {}
+
 
     Soldiers* clonis() const override;
 
@@ -25,6 +26,9 @@ public:
     void execute() override;
     void retreat() override;
     void rest() override;
+
+    //added child class destructors just in case memory cleanup is needed in the future.
+    virtual ~ShieldBearer() = default;
 
 };
 

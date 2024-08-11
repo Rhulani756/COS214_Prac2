@@ -1,8 +1,17 @@
 #include "Memento.h"
 
-Memento::Memento(int value1, int value2, int value3, int value4, std::string value5)
-        : healthPerSoldier(value1), damagePerSoldier(value2), defencePerSoldier(value3),
-          amountOfSoldiersPerUnit(value4), unitName(value5) {}
+Memento::Memento(int health, int damage, int defence, int amount, std::string name)
+:healthPerSoldier(health),damagePerSoldier(damage),defencePerSoldier(defence),amountOfSoldiersPerUnit(amount),unitName(name)
+{
+    // this->healthPerSoldier=health;
+    // this->damagePerSoldier=damage;
+    // this->defencePerSoldier=defence;
+    // this->amountOfSoldiersPerUnit=amount;
+    // this->unitName=name;
+
+
+}
+
 
 int Memento::getHealthPerSoldier() const {
     return healthPerSoldier;

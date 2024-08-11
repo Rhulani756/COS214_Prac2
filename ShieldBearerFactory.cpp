@@ -1,17 +1,24 @@
 #include "ShieldBearerFactory.h"
 
 Soldiers* ShieldBearerFactory::createUnit() {
-    return new ShieldBearer(120, 40, 90, 10, "ShieldBearer");
+    if (getSoldiers()) {
+        delete getSoldiers(); // Clean up the previous unit
+    }
+    setSoldiers(new ShieldBearer(120, 40, 90, 10, "ShieldBearer"));
+    return getSoldiers();
 }
 
+// Calculate total health for the unit
 int ShieldBearerFactory::calculateTotalHealthPerUnit(Soldiers* unit) {
-    return unit->healthPerSoldier * unit->amountOfSoldiersPerUnit;
+    return unit->getHealthPerSoldier() * unit->getAmountOfSoldiersPerUnit();
 }
 
+// Calculate total damage for the unit
 int ShieldBearerFactory::calculateTotalDamagePerUnit(Soldiers* unit) {
-    return unit->damagePerSoldier * unit->amountOfSoldiersPerUnit;
+    return unit->getDamagePerSoldier() * unit->getAmountOfSoldiersPerUnit();
 }
 
+// Calculate total defence for the unit
 int ShieldBearerFactory::calculateTotalDefencePerUnit(Soldiers* unit) {
-    return unit->defencePerSoldier * unit->amountOfSoldiersPerUnit;
+    return unit->getDefencePerSoldier() * unit->getAmountOfSoldiersPerUnit();
 }

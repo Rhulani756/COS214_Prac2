@@ -11,7 +11,8 @@ private:
     std::string unitName;
 public:
     ////constructor
-    Infantry(int health, int damage, int defence, int amount, std::string name);
+   Infantry(int health, int damage, int defence, int amount, std::string name)
+        : Soldiers(health, damage, defence, amount, name) {}
 
     Soldiers* clonis() const override;
 
@@ -22,6 +23,9 @@ public:
     void execute() override;
     void retreat() override;
     void rest() override;
+
+    //added child class destructors just in case memory cleanup is needed in the future.
+    virtual ~Infantry() = default;
 
 };
 

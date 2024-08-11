@@ -1,29 +1,42 @@
 #include "ShieldBearer.h"
 
-ShieldBearer::ShieldBearer(int health, int damage, int defence, int amount, std::string name) {
-    healthPerSoldier = health;
-    damagePerSoldier = damage;
-    defencePerSoldier = defence;
-    amountOfSoldiersPerUnit = amount;
-    unitName = name;
-}
+
 
 Soldiers* ShieldBearer::clonis() const {
     return new ShieldBearer(*this);
 }
 
+//Engage method
+void ShieldBearer::engage() {
+    std::cout << "ShieldBearer " << unitName << " is engaging with " << amountOfSoldiersPerUnit << " soldiers!" << std::endl;
+}
+
+//Disengage method
+void ShieldBearer::disengage() {
+    std::cout << "ShieldBearer " << unitName << " is disengaging!" << std::endl;
+}
+
+//Prepare method //(Template Method pattern)
 void ShieldBearer::prepare() {
-    // Specific preparation for ShieldBearer
+    std::cout << "ShieldBearer " << unitName << " is preparing for battle!" << std::endl;
 }
 
+//Execute method //(Template Method pattern)
 void ShieldBearer::execute() {
-    // Specific execution for ShieldBearer
+    std::cout << "ShieldBearer " << unitName << " is executing their battle plan!" << std::endl;
 }
 
+//Retreat method //(Template Method pattern)
 void ShieldBearer::retreat() {
-    // Specific retreat for ShieldBearer
+    std::cout << "ShieldBearer " << unitName << " is retreating!" << std::endl;
 }
 
+// Rest method (Template Method pattern)
 void ShieldBearer::rest() {
-    // Specific rest for ShieldBearer
+    std::cout << "ShieldBearer " << unitName << " is resting!" << std::endl;
 }
+
+
+
+
+

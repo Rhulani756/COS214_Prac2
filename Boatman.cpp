@@ -1,29 +1,31 @@
 #include "Boatman.h"
 
-Boatman::Boatman(int health, int damage, int defence, int amount, std::string name) {
-    healthPerSoldier = health;
-    damagePerSoldier = damage;
-    defencePerSoldier = defence;
-    amountOfSoldiersPerUnit = amount;
-    unitName = name;
+//Engage method
+void Boatman::engage() {
+    std::cout << "Boatman " << unitName << " is engaging with " << amountOfSoldiersPerUnit << " soldiers!" << std::endl;
 }
 
-Soldiers* Boatman::clonis() const {
-    return new Boatman(*this);
+//Disengage method
+void Boatman::disengage() {
+    std::cout << "Boatman " << unitName << " is disengaging!" << std::endl;
 }
 
+//Prepare method //(Template Method pattern)
 void Boatman::prepare() {
-    // Specific preparation for Boatman
+    std::cout << "Boatman " << unitName << " is preparing for battle!" << std::endl;
 }
 
+//Execute method //(Template Method pattern)
 void Boatman::execute() {
-    // Specific execution for Boatman
+    std::cout << "Boatman " << unitName << " is executing their battle plan!" << std::endl;
 }
 
+//Retreat method //(Template Method pattern)
 void Boatman::retreat() {
-    // Specific retreat for Boatman
+    std::cout << "Boatman " << unitName << " is retreating!" << std::endl;
 }
 
+// Rest method (Template Method pattern)
 void Boatman::rest() {
-    // Specific retreat for Boatman
+    std::cout << "Boatman " << unitName << " is resting!" << std::endl;
 }

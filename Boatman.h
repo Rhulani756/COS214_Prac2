@@ -4,7 +4,7 @@
 
 #include "Soldiers.h"
 
-class Boatman :public Soldiers{
+class Boatman : public Soldiers{
 private:
     int healthPerSoldier;
     int damagePerSoldier;
@@ -14,10 +14,12 @@ private:
 
 public:
 ////constructor
-    Boatman(int health, int damage, int defence, int amount, std::string name);
+ Boatman(int health, int damage, int defence, int amount, std::string name)
+        : Soldiers(health, damage, defence, amount, name) {}
 
-    Soldiers* clonis() const override;
-
+       Soldiers* clonis() const override {
+        return new Boatman(*this);
+    }
     void engage();
     void disengage();
 
@@ -25,6 +27,9 @@ public:
     void execute() override;
     void retreat() override;
     void rest() override;
+
+    //added child class destructors just in case memory cleanup is needed in the future.
+    virtual ~Boatman() = default;
 
 };
 
