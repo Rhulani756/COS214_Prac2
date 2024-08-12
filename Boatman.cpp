@@ -2,7 +2,7 @@
 
 //Engage method
 void Boatman::engage() {
-    std::cout << "Boatman " << unitName << " is engaging with " << amountOfSoldiersPerUnit << " soldiers!" << std::endl;
+    std::cout << "Boatman " << this->unitName << " is engaging with " << this->getAmountOfSoldiersPerUnit() << " soldiers!" << std::endl;
 }
 
 //Disengage method

@@ -11,11 +11,12 @@ private:
     std::string unitName ="Infantry";
 public:
     ////constructor
-   Infantry(int health, int damage, int defence, int amount, std::string name)
-        : Soldiers(health, damage, defence, amount, name) {}
+Infantry(int health, int damage, int defence, int amount, std::string name)
+    : Soldiers(health, damage, defence, amount, name) {
+    // Ensure proper initialization
+}
    Infantry() 
-        : Soldiers(), healthPerSoldier(0), damagePerSoldier(0),
-         defencePerSoldier(0), amountOfSoldiersPerUnit(0), unitName("Infantry") {}
+        : Soldiers(0,0,0,0,"Infantry") {}
     Soldiers* clonis() const override;
 
     void engage();

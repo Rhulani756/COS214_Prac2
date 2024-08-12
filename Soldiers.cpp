@@ -1,13 +1,17 @@
 
 #include "Soldiers.h"
+Soldiers::Soldiers(int health, int damage, int defence, int amount, std::string name)
+    : healthPerSoldier(health), damagePerSoldier(damage), defencePerSoldier(defence), amountOfSoldiersPerUnit(amount), unitName(name) {
 
-Soldiers::Soldiers(int health, int damage, int defence, int amount, std::string name): healthPerSoldier(health), 
-damagePerSoldier(damage),defencePerSoldier(defence), amountOfSoldiersPerUnit(amount),unitName(name) {}
-
+}
 void Soldiers::engage() {
+    std::cout << "Engaging with " << this->amountOfSoldiersPerUnit << " soldiers." << std::endl;
     prepare();
     execute();
+    
 }
+
+
 
 void Soldiers::disengage() {
     retreat();
@@ -40,7 +44,7 @@ int Soldiers::getDefencePerSoldier() const {
 }
 
 int Soldiers::getAmountOfSoldiersPerUnit() const {
-        return amountOfSoldiersPerUnit;
+        return this->amountOfSoldiersPerUnit;
 }
 
 std::string Soldiers::getUnitName() const {

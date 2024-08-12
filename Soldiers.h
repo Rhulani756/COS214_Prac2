@@ -11,7 +11,7 @@ private:
     int damagePerSoldier = 0;
     int defencePerSoldier = 0;
     int amountOfSoldiersPerUnit = 0;
-    std::string unitName = "ShieldBearer";
+    std::string unitName = "Soldiers";
 
     // Pure virtual methods for Template Method pattern
     virtual void prepare() = 0;
@@ -21,7 +21,7 @@ private:
 public:
    
    Soldiers(int health, int damage, int defence, int amount, std::string name);
-   Soldiers():healthPerSoldier(0),defencePerSoldier(0),amountOfSoldiersPerUnit(0),unitName("ShieldBearer"){};
+   Soldiers():healthPerSoldier(0),defencePerSoldier(0),amountOfSoldiersPerUnit(0),unitName("Soldiers"){};
 
  virtual ~Soldiers();
         

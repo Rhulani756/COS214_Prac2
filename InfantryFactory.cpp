@@ -6,6 +6,8 @@ Soldiers* InfantryFactory::createUnit() {
     if (currentSoldiers) {
         delete currentSoldiers; // Clean up the previous unit
     }
+
+    // Create a new Infantry unit with the given attributes
     setSoldiers(new Infantry(100, 20, 10, 50, "Bravo Company"));
     return getSoldiers();
 }

@@ -1,15 +1,24 @@
 #include "Infantry.h"
 
+// Infantry::Infantry(int health, int damage, int defence, int amount, std::string name)
+//     : Soldiers(health, damage, defence, amount, name) {
+//     // Ensure proper initialization
+// }
 
 
 Soldiers* Infantry::clonis() const {
-    return new Infantry(*this);
+    Infantry* cloned = new Infantry(*this);
+    // Debugging to ensure the clone has the correct number of soldiers
+    std::cout << "Cloning Infantry: Soldiers created with " << cloned->getAmountOfSoldiersPerUnit() << " soldiers." << std::endl;
+    return cloned;
 }
 
 //Engage method
 void Infantry::engage() {
-    std::cout << "Infantry " << unitName << " is engaging with " << amountOfSoldiersPerUnit << " soldiers!" << std::endl;
+   
+    std::cout << "Infantry " << this->getUnitName() << " is engaging with " << this->getAmountOfSoldiersPerUnit() << " soldiers!" << std::endl;
 }
+
 
 //Disengage method
 void Infantry::disengage() {
