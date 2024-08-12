@@ -51,5 +51,4 @@ valgrind:
 coverage: clean
 	g++ --coverage *.cpp -o Main
 	./Main
-	gcov -f -m -r -j Main-Main Main-Boatman Main-BoatmanFactory Main-CareTaker Main-Infantry Main-InfantryFactory Main-Memento Main-ShieldBearer Main-ShieldBearerFactory
-	Main-Soldiers Main-SoldierFactory 
+	gcov -f -m -r -j Main-Main Main-Boatman Main-BoatmanFactory Main-CareTaker Main-Infantry Main-InfantryFactory Main-Memento Main-ShieldBearer Main-ShieldBearerFactory Main-Soldiers Main-SoldierFactory 
